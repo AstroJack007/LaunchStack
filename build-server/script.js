@@ -7,7 +7,7 @@ const mime = require('mime-types')
 const Redis = require('ioredis')
 
 
-
+/**redis publisher */
 const publisher = new Redis(process.env.REDIS_URL)
 
 

@@ -419,7 +419,7 @@ MIT License
 - [ ] Database integration
 - [ ] Environment variable management UI
 - [ ] Build history and rollbacks
-- [ ] Team collaboration features
+
 
 ---
 

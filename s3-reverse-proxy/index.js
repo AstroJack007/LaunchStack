@@ -1,9 +1,10 @@
+
 require('dotenv').config()
 const express = require('express')
 const app = express()
 const httpProxy = require('http-proxy')
 const PORT = process.env.PORT || 8000;
-
+/**base path for s3 bucket */
 const BASE_PATH = `https://${process.env.S3_BUCKET}.s3.${process.env.S3_REGION}.amazonaws.com/__outputs`
 
 const proxy = httpProxy.createProxy()

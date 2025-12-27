@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 9000
 
 const subscriber = new Redis(process.env.REDIS_URL)
 const io = new Server({ cors: '*' });
-
+/** socket server */
 io.listen(process.env.SOCKET_PORT || 9001, () => {
     console.log(`Socket Server Running on port ${process.env.SOCKET_PORT || 9001}`)
 })
